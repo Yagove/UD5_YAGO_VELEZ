@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <title>Cuestionario</title>
+
+  </head>
+
+  <body class="bc-color">
+    <header class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-10">
+      <nav class="flex justify-between w-full text-white-p4">
+        <a href="#"><span class="font-semibold text-2xl text-zinc-100 tracking-tight">Ciencia&QUIZ</span></a>
+
+        <div class="md:items-center md:w-auto flex pr-10">
+
+          <div class="md:flex space-x-4 hidden items-center place-content-center font-bold text-xl italic pr-100">
+            <a class="block md:text-black mr-4" href="#">Cuestionario</a>
+            <a class="block md:text-black mr-4>" href="#">Docs</a>
+            <a class="block md:text-black mr-4" href="#">Comunidad</a>
+          </div>
+
+          <div class="flex text-sm" v-else>
+            <a class="p-2 ml-2 bg-white text-teal-500 font-semibold leading-none border border-gray-100 rounded hover:bg-gradient-to-r hover:bc-gray-100"href="#">Login</a>
+            <a class="p-2 ml-2 bg-teal-500 text-gray-100 font-semibold leading-none border border-teal-600 rounded hover:border-transparent hover:bg-teal-600" href="#">Sign Up</a>
+          </div>
+
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="h-screen flex items-center bg-cyan-950">
+
+      <div class="bg-cyan-950">
+        <h1 class="font-bold text-teal-500 text-center p-10 absolute top-0 left-0 z-10 w-full text-3xl">QUIZ 1</h1>
+  
+      </div>
+
+      <div id="tarjeta"class="border shadow-md shadow-teal-950 border-lime-600 bg-emerald-700 w-full sm:w-1/2 mx-auto rounded-lg p-5 sm:p-20 text-center">
+
+        <h1 id="question" class="font-bold text-xl mb-4"></h1>
+
+        <div class="flex flex-col p-5 sm:p-10 space-y-3">
+
+          <button class="text-black hover:bg-black hover:text-white py-2 px-4 rounded-lg"></button>
+          <button class="text-black hover:bg-black hover:text-white py-2 px-4 rounded-lg"></button>
+          <button class="text-black hover:bg-black hover:text-white py-2 px-4 rounded-lg"></button> 
+
+        </div>
+
+        <div class="mt-8 flex justify-between px-2 sm:px-0">
+          <button id="prevBTN" class="text-black py-2 px-4 rounded bg-black text-white transition-colors duration-300 ease-in-out btn btn-secondary" onclick="previousQuestion()">Atrás</button>
+          <button id="nextBTN" class="text-black py-2 px-4 rounded bg-black text-white transition-colors duration-300 ease-in-out btn btn-primary" onclick="nextQuestion()">Siguiente</button>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-cyan-950 font-semibold">
+      <h1>ActividadPracticaUD5</h1>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
